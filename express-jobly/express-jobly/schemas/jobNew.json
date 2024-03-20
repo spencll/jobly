@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "title",
+        "salary",
+        "equity",
+        "companyHandle"
+    ],
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "j3"
+            ]
+        },
+        "salary": {
+            "type": "integer",
+            "default": 0,
+            "title": "The salary Schema",
+            "examples": [
+                30000
+            ]
+        },
+        "equity": {
+            "type": "string",
+            "default": "",
+            "title": "The equity Schema",
+            "examples": [
+                "0.3"
+            ]
+        },
+        "companyHandle": {
+            "type": "string",
+            "default": "",
+            "title": "The companyHandle Schema",
+            "examples": [
+                "c3"
+            ]
+        }
+    },
+    "examples": [{
+        "title": "j3",
+        "salary": 30000,
+        "equity": "0.3",
+        "companyHandle": "c3"
+    }]
+}
